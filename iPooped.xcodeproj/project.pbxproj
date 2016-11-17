@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F304AAEC1DC0E285004ABBBF /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F304AAEB1DC0E285004ABBBF /* CloudKit.framework */; };
 		F317FAC11DC0DF0C00898931 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317FAC01DC0DF0C00898931 /* AppDelegate.swift */; };
 		F317FAC31DC0DF0C00898931 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317FAC21DC0DF0C00898931 /* ViewController.swift */; };
 		F317FAC61DC0DF0C00898931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F317FAC41DC0DF0C00898931 /* Main.storyboard */; };
@@ -15,6 +16,10 @@
 		F317FACE1DC0DF0C00898931 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F317FACC1DC0DF0C00898931 /* LaunchScreen.storyboard */; };
 		F317FAD91DC0DF0C00898931 /* iPoopedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317FAD81DC0DF0C00898931 /* iPoopedTests.swift */; };
 		F317FAE41DC0DF0C00898931 /* iPoopedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317FAE31DC0DF0C00898931 /* iPoopedUITests.swift */; };
+		F399C9741DDBAB3100F769F8 /* PoopDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399C9731DDBAB3100F769F8 /* PoopDetailViewController.swift */; };
+		F3B1377E1DD3EE0B0054A054 /* PoopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B1377D1DD3EE0B0054A054 /* PoopTableViewController.swift */; };
+		F3CCEBBD1DD38E5D00615428 /* Poop.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCEBBC1DD38E5D00615428 /* Poop.swift */; };
+		F3CCEBC11DD38F6000615428 /* PoopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCEBC01DD38F6000615428 /* PoopTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F304AAEB1DC0E285004ABBBF /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		F317FABD1DC0DF0C00898931 /* iPooped.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPooped.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F317FAC01DC0DF0C00898931 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F317FAC21DC0DF0C00898931 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +56,10 @@
 		F317FAE31DC0DF0C00898931 /* iPoopedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPoopedUITests.swift; sourceTree = "<group>"; };
 		F317FAE51DC0DF0C00898931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F317FAF11DC0DF2E00898931 /* iPooped.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iPooped.entitlements; sourceTree = "<group>"; };
+		F399C9731DDBAB3100F769F8 /* PoopDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoopDetailViewController.swift; sourceTree = "<group>"; };
+		F3B1377D1DD3EE0B0054A054 /* PoopTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoopTableViewController.swift; sourceTree = "<group>"; };
+		F3CCEBBC1DD38E5D00615428 /* Poop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Poop.swift; sourceTree = "<group>"; };
+		F3CCEBC01DD38F6000615428 /* PoopTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoopTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F304AAEC1DC0E285004ABBBF /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F304AAEA1DC0E285004ABBBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F304AAEB1DC0E285004ABBBF /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F317FAB41DC0DF0C00898931 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +103,7 @@
 				F317FAD71DC0DF0C00898931 /* iPoopedTests */,
 				F317FAE21DC0DF0C00898931 /* iPoopedUITests */,
 				F317FABE1DC0DF0C00898931 /* Products */,
+				F304AAEA1DC0E285004ABBBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,10 +120,14 @@
 		F317FABF1DC0DF0C00898931 /* iPooped */ = {
 			isa = PBXGroup;
 			children = (
+				F3CCEBC01DD38F6000615428 /* PoopTableViewCell.swift */,
+				F3B1377D1DD3EE0B0054A054 /* PoopTableViewController.swift */,
 				F317FAF11DC0DF2E00898931 /* iPooped.entitlements */,
 				F317FAC01DC0DF0C00898931 /* AppDelegate.swift */,
 				F317FAC21DC0DF0C00898931 /* ViewController.swift */,
 				F317FAC41DC0DF0C00898931 /* Main.storyboard */,
+				F399C9731DDBAB3100F769F8 /* PoopDetailViewController.swift */,
+				F3CCEBBC1DD38E5D00615428 /* Poop.swift */,
 				F317FACA1DC0DF0C00898931 /* Assets.xcassets */,
 				F317FACC1DC0DF0C00898931 /* LaunchScreen.storyboard */,
 				F317FACF1DC0DF0C00898931 /* Info.plist */,
@@ -199,9 +223,16 @@
 					F317FABC1DC0DF0C00898931 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 8R59S3FFWG;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.DataProtection = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
 								enabled = 1;
 							};
 						};
@@ -209,12 +240,14 @@
 					F317FAD31DC0DF0C00898931 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 8R59S3FFWG;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F317FABC1DC0DF0C00898931;
 					};
 					F317FADE1DC0DF0C00898931 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 8R59S3FFWG;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F317FABC1DC0DF0C00898931;
 					};
@@ -273,8 +306,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F317FAC91DC0DF0C00898931 /* iPooped.xcdatamodeld in Sources */,
+				F3B1377E1DD3EE0B0054A054 /* PoopTableViewController.swift in Sources */,
+				F399C9741DDBAB3100F769F8 /* PoopDetailViewController.swift in Sources */,
 				F317FAC31DC0DF0C00898931 /* ViewController.swift in Sources */,
 				F317FAC11DC0DF0C00898931 /* AppDelegate.swift in Sources */,
+				F3CCEBC11DD38F6000615428 /* PoopTableViewCell.swift in Sources */,
+				F3CCEBBD1DD38E5D00615428 /* Poop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,28 +462,34 @@
 		F317FAE91DC0DF0C00898931 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = iPooped/iPooped.entitlements;
 				DEVELOPMENT_TEAM = 8R59S3FFWG;
 				INFOPLIST_FILE = iPooped/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.stein13.iPooped;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F317FAEA1DC0DF0C00898931 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = iPooped/iPooped.entitlements;
 				DEVELOPMENT_TEAM = 8R59S3FFWG;
 				INFOPLIST_FILE = iPooped/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.stein13.iPooped;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -527,6 +570,7 @@
 				F317FAEA1DC0DF0C00898931 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F317FAEB1DC0DF0C00898931 /* Build configuration list for PBXNativeTarget "iPoopedTests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +579,7 @@
 				F317FAED1DC0DF0C00898931 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F317FAEE1DC0DF0C00898931 /* Build configuration list for PBXNativeTarget "iPoopedUITests" */ = {
 			isa = XCConfigurationList;
@@ -543,6 +588,7 @@
 				F317FAF01DC0DF0C00898931 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
