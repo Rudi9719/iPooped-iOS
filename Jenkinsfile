@@ -1,1 +1,1 @@
-build 'iPooped'
+sh 'xcodebuild'
