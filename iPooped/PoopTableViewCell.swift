@@ -12,9 +12,13 @@ class PoopTableViewCell: UITableViewCell {
 
     @IBOutlet weak var dateTime: UILabel!
     @IBOutlet weak var rating: UILabel!
+    @IBOutlet weak var spaceView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.layer.cornerRadius = 10
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -85,6 +85,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate,
         
        
     }
+    
+    @IBAction func cancelShit(_ sender: UIButton) {
+        
+       self.dismiss(animated: true, completion: nil)
+    }
+
     func sharePoo(doIt: Bool, pic: Bool) {
         if (doIt) {
             

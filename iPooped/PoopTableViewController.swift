@@ -36,7 +36,9 @@ class PoopTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    @IBAction func unwindHomeCancel(segue: UIStoryboardSegue) {
+        
+    }
     @IBAction func unwindHome(segue: UIStoryboardSegue) {
         if let sourceViewController = segue.source as? ViewController {
             let smelly  = sourceViewController.smelly!
@@ -91,14 +93,14 @@ class PoopTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+        // Prepare variables
         let cell = tableView.dequeueReusableCell(withIdentifier: "PTVCell", for: indexPath) as! PoopTableViewCell
         let poop = poops[indexPath.row]
-        
+        // Use them
         cell.dateTime.text = poop.datetime
         cell.rating.text = poopRates[poop.rate]
-        
-        
+        cell.spaceView.layer.cornerRadius = 10
+        // Return the output
         return cell
     }
     
