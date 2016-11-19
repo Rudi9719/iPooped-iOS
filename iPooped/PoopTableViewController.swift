@@ -48,7 +48,7 @@ class PoopTableViewController: UITableViewController {
                 poops.insert(smelly, at: 0)
                 tableView.insertRows(at: [newIndexPath], with: .bottom)
             
-            savePoos()
+
             
         
             
@@ -60,20 +60,18 @@ class PoopTableViewController: UITableViewController {
                     poops[selectedIndexPath.row] = smelly
                     tableView.reloadRows(at: [selectedIndexPath], with: .none)
                 }
-            savePoos()
-            }
-            else {
+            } else {
                 if let selectedIndexPath = tableView.indexPathForSelectedRow {
                     poops.remove(at: selectedIndexPath.row)
                     tableView.deleteRows(at: [selectedIndexPath], with: .none)
-                    savePoos()
+                   
                 }
                 
             }
             
             
         }
-        
+            savePoos()
     }
     func savePoos() {
         let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(poops, toFile: Poop.ArchiveURL.path)

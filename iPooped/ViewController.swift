@@ -82,9 +82,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate,
         }
         
 
-        if (!pic) {
-            self.performSegue(withIdentifier: "unwindToHome", sender: self)
-        }
         
        
     }
@@ -108,8 +105,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate,
             activityVC.popoverPresentationController?.sourceView = self.view
             present(activityVC, animated: true, completion: nil)
         }
-        self.performSegue(withIdentifier: "unwindToHome", sender: self)
-        
+        savePoo()
     }
 
 
