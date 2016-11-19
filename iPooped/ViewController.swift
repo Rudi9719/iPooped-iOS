@@ -99,7 +99,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate,
             else {
                 objectsToShare = [textToShare]
             }
-            print("HOLY SHIT")
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
             
             activityVC.popoverPresentationController?.sourceView = self.view
@@ -122,7 +121,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate,
     
     // MARK: - UIImagePickerControllerDelegate Methods
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        print("Ermahgurd")
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             
             pooPic = pickedImage

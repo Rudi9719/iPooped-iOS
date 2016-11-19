@@ -17,11 +17,9 @@ class PoopTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Poop table loaded")
         
         if let savedPoops = loadPoops() {
             poops += savedPoops
-            print("Poops loaded.")
        
         }
         // Uncomment the following line to preserve selection between presentations
@@ -40,7 +38,6 @@ class PoopTableViewController: UITableViewController {
     }
 
     @IBAction func unwindHome(segue: UIStoryboardSegue) {
-        print("Unwinding home")
         if let sourceViewController = segue.source as? ViewController {
             let smelly  = sourceViewController.smelly!
                 // Add a new meal.
@@ -76,10 +73,9 @@ class PoopTableViewController: UITableViewController {
     func savePoos() {
         let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(poops, toFile: Poop.ArchiveURL.path)
         if !isSuccessfulSave {
-            print("Failed to save poop...")
         }
         if isSuccessfulSave {
-            print("Poos saved")
+            print("iPooped:PoopTableViewController - Poops Saved")
             
         }
     }

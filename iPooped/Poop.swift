@@ -69,7 +69,6 @@ class Poop: NSObject, NSCoding {
     // MARK: NSCoding
     
     func encode(with aCoder: NSCoder) {
-        print(location)
         
         aCoder.encode(location.latitude, forKey: PropertyKey.latKey)
         aCoder.encode(location.longitude, forKey: PropertyKey.longKey)
